@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer page</title>
+    <style>
+        .transfer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .transfer-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 3px 7px 18px #3768E324;
+        }
+         .transfer-wrapper .transfer-form-wrapper #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+        .transfer-form-wrapper #form input{
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 15px;
+        }
+        .transfer-form-wrapper #form label{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+           
+        .transfer-wrapper .btns{
+            margin: 10px;
+        }
+        .transfer-wrapper .btns button{
+            font-size: 20px;
+            color: white;
+            background-color: #652CBF;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transfer</h1>
+        <div class="transfer">
+            <div class="transfer-wrapper">
+                <div class="transfer-form-wrapper">
+                    <form id="form">
+                        <label for="benfname">Benificiary Name</label>
+                        <input type="text" name="benfname" id="benfname">
+                        <label for="accnum">Benificiary Account Number</label>
+                        <input type="number" name="accnum" id="accnum">
+                        <label for="amttra">Enter the Amount to Transfer</label>
+                        <input type="number" name="amttra" id="amttra">
+                    </form>
+                </div>
+                <div class="selectOptions">
+                    <select name="" id="" class="select">
+                        <option value="">--select a reason--</option>
+                        <option value="rent">Rent</option>
+                        <option value="loan-repayment">Loan Repayment</option>
+                        <option value="education">Education</option>
+                    </select>
+        
+                </div>
+                <div class="btns">
+                    <button id="transferbtn">Transfer</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script/transfer.js"></script>
+</body>
+</html>

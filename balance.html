@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <style>
+        .balance-wrapper{
+            height: 100px;  
+        }
+
+        .balance-wrapper .checkbtn button{
+            font-size: 20px;
+            color: white;
+            background-color: #652CBF;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .balance-wrapper p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="balance-wrapper">
+        <p><span id="result"></span></p>
+        <div class="checkbtn">
+            <button id="checkBalance">Check Balance</button>
+        </div>
+    </div>
+    <script src="script/balance.js"></script>
+</body>
+</html>

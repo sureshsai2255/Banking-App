@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Benificiary</title>
+    <style>
+        .manageBeneficiary-wrapper .beneficiary-details{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            box-shadow: 3px 7px 18px #3768E324;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .beneficiary-details  span{
+            font-size: 20px;
+            color:#45545F;
+        }
+        
+        .beneficiary-details .btns .update-btns{
+            
+            color: white;
+            background-color: #652CBF;
+            border-radius: 5px;
+            width: 70px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="manageBeneficiary-wrapper" id="manageBeneficiary-wrapper">
+        <h1>Manage Benificiary</h1>
+         <div class="beneficiary-details">
+            <div class="accountName">
+                <p id="accName"></p>
+             </div>
+             <div class="beneficiary-account-number">
+                <p id="accNum"></p>
+             </div>
+    
+             <div class="btns">
+                <button class="update-btns">Edit</button>
+                <button class="update-btns">Delete</button>
+             </div>
+         </div>
+    </div>
+    <script src="script/manageBenificiary.js"></script>
+</body>
+</html>

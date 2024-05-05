@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddBenificiary</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .add-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-wrapper #register-beneficiary{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 400px;
+            height: 300px;
+            font-size: 18px;
+            color: #353A4A;
+            border: 1px solid #E5E5E5 ;
+            box-shadow: 3px 7px 18px #3768E324;
+            border-radius: 10px;
+            padding: 10px;
+
+
+        }
+        .form-wrapper #register-beneficiary input{
+            height: 35px;
+            padding-left: 10px;
+            border-radius: 5px;
+            font-size: 15px                                                                                                                                                                                                                                         ;
+            outline: none;
+            border: 1px solid #E5E5E5;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+        .add-wrapper .btn-wrapper button{
+          padding: 10px 20px;
+           border-radius: 5px;
+           font-size: 20px;
+           background-color: blueviolet;
+           color: white;
+           border: none;
+           cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="add-wrapper">
+            <div class="form-wrapper">
+                <h1>Add Beneficiary</h1>
+                <form id="register-beneficiary">
+                    <label for="beneficiaryname">Add Benficiary Name</label>
+                    <input type="text" name="beneficiaryname" id="beneficiaryname" >
+                    <label for="beneficiaryaccountnumber">Benificiary Account Number</label>
+                    <input type="number" name="beneficiaryaccountnumber" id="beneficiaryaccountnumber" >
+                    <label for="Ifsc">IFSC Code</label>
+                    <input type="text" name="ifsc" id="Ifsc">
+                </form>
+            </div>
+            <div class="btn-wrapper">
+                <button id="submit-btn">Add</button>
+            </div>
+        </div>
+        <script src="script/addBenificiary.js"></script>
+</body>
+</html>

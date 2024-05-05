@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+          *{
+            font-family: Roboto sans-serif;
+          }
+        .signup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .signup-wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width: 800px;
+            border-radius: 20px;
+    
+        }
+        .signup-wrapper #register-error{
+            color: red;
+        }
+         .signup-form-wrapper form{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+        }
+        .signup-form-wrapper form label{
+            font-size: 20px;
+            margin-top: 10px;
+            color: #353A4A;
+        }
+        .signup-form-wrapper form input{
+            width: 350px;;
+            height: 48px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 3px 7px 18px #3768E324;
+            border: 1px solid  #E5E5E5;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        .signup-form-wrapper form input:focus{
+            outline: none;
+        }
+        .signup-wrapper .reg-btn #register{
+             margin-top: 10px;
+             padding: 10px;
+             border-radius: 5px;
+             background-color:#652CBF;
+             border: none;
+             color: white;
+             font-size: 20px;
+             cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <div class="signup-wrapper">
+            <span style="font-size: 20px;">Register Here</span>
+            <span id="register-error"></span>
+            <div class="signup-form-wrapper">
+                <form id="register-form">
+                    <label for="First Name">First Name</label>
+                    <input type="text"  id="First Name" name="First Name">
+                    <label for="Last Name">Last Name</label>
+                    <input type="text"  id="Last Name" name="Last Name">
+                    <label for="Email">Email</label>
+                    <input type="email"  id="Email" name="Email">
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" name="Password"> 
+                    <label for="Number">Phone Number</label>
+                    <input type="tel" id="Number" name="Number">
+                </form> 
+            </div>
+            <div class="reg-btn">
+                <button id="register">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/signup.js"></script>
+</body>
+</html>
