@@ -23,6 +23,7 @@ const transferAmount = event => {
             const remainingBalance = getBalance - transfer;
             window.localStorage.setItem('Balance', remainingBalance);
             alert('Transaction successful');
+            window.location.href="home.html"
         } else {
             alert('Insufficient funds');
         }
